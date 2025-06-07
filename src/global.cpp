@@ -4,9 +4,10 @@
 #include <sstream>
 
 #ifdef _WIN32
+#include <conio.h>
 
 void getKeypressDownInput(char &c) {
-  std::cin >> c;
+  c = _getch();
 }
 
 #else
