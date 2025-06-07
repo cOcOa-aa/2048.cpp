@@ -131,8 +131,8 @@ std::string BoardSizeErrorPrompt() {
 std::string InputCommandListPrompt() {
   constexpr auto sp = "  ";
   const auto input_commands_list_text = {
-      "W or K or ↑ => Up", "A or H or ← => Left", "S or J or ↓ => Down",
-      "D or L or → => Right", "Z or P => Save", "M => Return to menu"};
+      "W => Up", "A => Left", "S => Down", "D => Right",
+      "Z => Save", "M => Return to menu"};
   std::ostringstream str_os;
   for (const auto txt : input_commands_list_text) {
     str_os << sp << txt << "\n";
