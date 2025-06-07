@@ -34,7 +34,6 @@ Color::Modifier tileBgColor(ull value) {
   }
 }
 
-// 밝은 배경(2, 4 등)에는 검정 글자, 그 외에는 흰색 글자
 Color::Modifier tileFgColor(ull value) {
   if (value == 2 || value == 4) {
     return fgBlack;
@@ -43,11 +42,11 @@ Color::Modifier tileFgColor(ull value) {
   }
 }
 
-} // namespace
+}
 
 std::string drawTileString(tile_t currentTile) {
     std::ostringstream tile_richtext;
-    const int tile_width = 4; // 타일 칸의 너비에 맞게 조정
+    const int tile_width = 4;
     if (!currentTile.value) {
         tile_richtext << std::string(tile_width, ' ');
     } else {
@@ -61,4 +60,4 @@ std::string drawTileString(tile_t currentTile) {
     return tile_richtext.str();
 }
 
-} // namespace Game
+}
