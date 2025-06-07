@@ -1,4 +1,4 @@
-#include "game-input.hpp"
+﻿#include "game-input.hpp"
 #include "global.hpp"
 
 namespace Game {

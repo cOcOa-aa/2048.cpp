@@ -1,4 +1,4 @@
-#include "loadresource.hpp"
+﻿#include "loadresource.hpp"
 #include "gameboard.hpp"
 #include "global.hpp"
 #include <algorithm>

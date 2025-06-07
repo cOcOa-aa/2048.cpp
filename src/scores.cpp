@@ -1,4 +1,4 @@
-#include "scores.hpp"
+﻿#include "scores.hpp"
 #include "color.hpp"
 #include <algorithm>
 #include <array>

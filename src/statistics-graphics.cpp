@@ -1,4 +1,4 @@
-#include "statistics-graphics.hpp"
+﻿#include "statistics-graphics.hpp"
 #include "color.hpp"
 #include <array>
 #include <iomanip>

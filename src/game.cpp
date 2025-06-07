@@ -1,4 +1,4 @@
-#include "game.hpp"
+﻿#include "game.hpp"
 #include "game-graphics.hpp"
 #include "game-input.hpp"
 #include "game-pregamemenu.hpp"
