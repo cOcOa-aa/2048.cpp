@@ -48,7 +48,7 @@ public:
   }
 };
 
-} // namespace Color
+}
 
 static Color::Modifier bold_off(Color::Code::RESET);
 static Color::Modifier bold_on(Color::Code::BOLD);
@@ -73,16 +73,16 @@ static Color::Modifier bgBlue(Color::Code::BG_BLUE);
 static Color::Modifier bgGreen(Color::Code::BG_GREEN);
 static Color::Modifier bgRed(Color::Code::BG_RED);
 static Color::Modifier bgDefault(Color::Code::BG_DEFAULT);
-static Color::Modifier bg2(Color::Code::BG_DEFAULT);      // 2
-static Color::Modifier bg4(Color::Code::BG_GREEN);        // 4
-static Color::Modifier bg8(Color::Code::BG_BLUE);         // 8
-static Color::Modifier bg16(Color::Code::BG_RED);         // 16
-static Color::Modifier bg32(Color::Code::BG_MAGENTA);     // 32
-static Color::Modifier bg64(Color::Code::BG_CYAN);        // 64
-static Color::Modifier bg128(Color::Code::BG_YELLOW);     // 128
-static Color::Modifier bg256(Color::Code::BG_LIGHT_RED);  // 256
-static Color::Modifier bg512(Color::Code::BG_LIGHT_GREEN);// 512
-static Color::Modifier bg1024(Color::Code::BG_LIGHT_BLUE);// 1024
-static Color::Modifier bg2048(Color::Code::BG_LIGHT_YELLOW);// 2048
+static Color::Modifier bg2(Color::Code::BG_DEFAULT);
+static Color::Modifier bg4(Color::Code::BG_GREEN);
+static Color::Modifier bg8(Color::Code::BG_BLUE);
+static Color::Modifier bg16(Color::Code::BG_RED);
+static Color::Modifier bg32(Color::Code::BG_MAGENTA);
+static Color::Modifier bg64(Color::Code::BG_CYAN);
+static Color::Modifier bg128(Color::Code::BG_YELLOW);
+static Color::Modifier bg256(Color::Code::BG_LIGHT_RED);
+static Color::Modifier bg512(Color::Code::BG_LIGHT_GREEN);
+static Color::Modifier bg1024(Color::Code::BG_LIGHT_BLUE);
+static Color::Modifier bg2048(Color::Code::BG_LIGHT_YELLOW);
 
 #endif
