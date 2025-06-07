@@ -9,25 +9,21 @@
 namespace Game {
 namespace {
 
-// 숫자별 배경색을 지정
 Color::Modifier tileBgColor(ull value) {
-  std::vector<Color::Modifier> bg_colors{
-      bgDefault,   // 2
-      bgGreen,     // 4
-      bgBlue,      // 8
-      bgRed,       // 16
-      bgDefault,   // 32
-      bgGreen,     // 64
-      bgBlue,      // 128
-      bgRed,       // 256
-      bgDefault,   // 512
-      bgGreen,     // 1024
-      bgBlue       // 2048
-  };
-  if (value == 0) return bgDefault;
-  int log = log2(value);
-  int index = log < 12 ? log - 1 : 10;
-  return bg_colors[index];
+  switch (value) {
+    case 2: return bg2;
+    case 4: return bg4;
+    case 8: return bg8;
+    case 16: return bg16;
+    case 32: return bg32;
+    case 64: return bg64;
+    case 128: return bg128;
+    case 256: return bg256;
+    case 512: return bg512;
+    case 1024: return bg1024;
+    case 2048: return bg2048;
+    default: return bgDefault;
+  }
 }
 
 // 밝은 배경(2, 4 등)에는 검정 글자, 그 외에는 흰색 글자
