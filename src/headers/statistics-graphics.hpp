@@ -1,4 +1,4 @@
-#ifndef STATISTICSGRAPHICS_H
+﻿#ifndef STATISTICSGRAPHICS_H
 #define STATISTICSGRAPHICS_H
 
 #include <string>

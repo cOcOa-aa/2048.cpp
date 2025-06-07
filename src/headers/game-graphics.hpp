@@ -1,4 +1,4 @@
-#ifndef GAMEGRAPHICS_H
+﻿#ifndef GAMEGRAPHICS_H
 #define GAMEGRAPHICS_H
 
 #include <string>

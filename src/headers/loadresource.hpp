@@ -1,4 +1,4 @@
-#ifndef LOADRESOURCE_H
+﻿#ifndef LOADRESOURCE_H
 #define LOADRESOURCE_H
 
 #include <string>

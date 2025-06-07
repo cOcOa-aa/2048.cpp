@@ -1,4 +1,4 @@
-#ifndef SCORES_H
+﻿#ifndef SCORES_H
 #define SCORES_H
 
 #include "global.hpp"

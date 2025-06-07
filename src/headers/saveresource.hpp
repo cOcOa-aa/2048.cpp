@@ -1,4 +1,4 @@
-#ifndef SAVERESOURCE_H
+﻿#ifndef SAVERESOURCE_H
 #define SAVERESOURCE_H
 
 #include <string>

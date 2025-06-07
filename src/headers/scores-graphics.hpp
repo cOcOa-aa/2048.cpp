@@ -1,4 +1,4 @@
-#ifndef SCORESGRAPHICS_H
+﻿#ifndef SCORESGRAPHICS_H
 #define SCORESGRAPHICS_H
 
 #include <string>

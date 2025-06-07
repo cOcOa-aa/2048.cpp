@@ -1,4 +1,4 @@
-#ifndef TILEGRAPHICS_H
+﻿#ifndef TILEGRAPHICS_H
 #define TILEGRAPHICS_H
 
 #include <string>

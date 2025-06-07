@@ -1,4 +1,4 @@
-#ifndef MENUGRAPHICS_H
+﻿#ifndef MENUGRAPHICS_H
 #define MENUGRAPHICS_H
 
 #include <string>

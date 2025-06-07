@@ -1,4 +1,4 @@
-#ifndef STATISTICS_H
+﻿#ifndef STATISTICS_H
 #define STATISTICS_H
 
 #include "global.hpp"

@@ -1,4 +1,4 @@
-#ifndef GAMEBOARDGRAPHICS_H
+﻿#ifndef GAMEBOARDGRAPHICS_H
 #define GAMEBOARDGRAPHICS_H
 
 #include <string>

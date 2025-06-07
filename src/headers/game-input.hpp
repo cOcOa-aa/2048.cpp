@@ -1,4 +1,4 @@
-#ifndef GAMEINPUT_H
+﻿#ifndef GAMEINPUT_H
 #define GAMEINPUT_H
 
 #include <array>
