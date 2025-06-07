@@ -60,5 +60,11 @@ static Color::Modifier lightYellow(Color::Code::FG_LIGHT_YELLOW);
 static Color::Modifier lightBlue(Color::Code::FG_LIGHT_BLUE);
 static Color::Modifier lightMagenta(Color::Code::FG_LIGHT_MAGENTA);
 static Color::Modifier lightCyan(Color::Code::FG_LIGHT_CYAN);
+static Color::Modifier fgWhite(Color::Code::FG_WHITE);
+static Color::Modifier fgBlack(Color::Code::FG_BLACK);
+static Color::Modifier bgBlue(Color::Code::BG_BLUE);
+static Color::Modifier bgGreen(Color::Code::BG_GREEN);
+static Color::Modifier bgRed(Color::Code::BG_RED);
+static Color::Modifier bgDefault(Color::Code::BG_DEFAULT);
 
 #endif
