@@ -48,6 +48,7 @@ docker run -it --rm final_2021040003:v1
 
 ```sh
 2048.cpp/
+├── Dockerfile           # 도커 이미지 빌드 스크립트
 ├── CMakeLists.txt       # CMake 빌드 설정 파일
 ├── src/                 # C++ 소스 코드 디렉토리
 │   └── ...              # .cpp, .hpp 파일 등
