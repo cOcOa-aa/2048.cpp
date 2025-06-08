@@ -1,88 +1,37 @@
-# 2048.cpp
-
-![Actions Status](https://github.com/plibither8/2048.cpp/workflows/ci/badge.svg)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/b37414d66e7d4146bf72a4a467fdc84d)](https://app.codacy.com/app/plibither8/2048.cpp?utm_source=github.com&utm_medium=referral&utm_content=plibither8/2048.cpp&utm_campaign=Badge_Grade_Dashboard)
-[![Language grade: C/C++](https://img.shields.io/lgtm/grade/cpp/g/plibither8/2048.cpp.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/plibither8/2048.cpp/context:cpp)
-[![Made with Love in India](https://madewithlove.org.in/badge.svg)](https://madewithlove.org.in/)
-[![Run on Repl.it](https://repl.it/badge/github/plibither8/2048.cpp)](https://repl.it/github/plibither8/2048.cpp)
-
-> Terminal version of the game "2048" written in C++.
-
-:tada: Featured on GitHub's [Twitter](https://twitter.com/github/status/1017094930991370240) and [Facebook](https://www.facebook.com/GitHub/videos/1433491453419807/) pages! :tada:
-
 <p align="center">
     <img align="center" alt="2048 in action!" src="assets/demo.gif"></img>
 </p>
 
-## Setup
+## Goal
 
-The game and code is made to run natively on the GNU/Linux and MacOS platforms, but cross-platform compatibility for Windows has been added too.
+이 프로젝트의 목표는 C++로 구현된 2048 게임을  Docker 환경에서 누구나 쉽게 설치하고 실행할 수 있도록 제공하는 것입니다.
+복잡한 개발 환경 설정 없이 Docker만 설치되어 있으면, 터미널에서 2048 게임을 바로 실행할 수 있습니다.
 
 ### Requirements
 
-* C++11 compiler (e.g. `g++`, `clang++`, `pgc++`, `icpc`, etc.)
-* Virtually any platform including:
-  * Linux
-  * MacOS
-  * Windows (via Cygwin or Windows Subsystem for Linux)
-* [CMake](https://cmake.org/) or [Meson](https://mesonbuild.com/)
+* Ubuntu: 22.04
+* g++: 11.4.0
+* cmake: 3.22.1
+* make: 4.3
 
-### Installation
+### How to install & Run
 
-1. Open your terminal in your preferred directory and clone this project:
+1. Docker 이미지 다운로드 및 설치
+(1) 이미지 파일 다운로드
+제공받은 Docker 이미지 파일(final_2021040003_v1.tar)을 원하는 디렉토리에 저장합니다.
+(2) 이미지 등록
 ```sh
-git clone https://github.com/plibither8/2048.cpp
+docker load -i final_2021040003_v1.tar
 ```
-2. Enter the project directory:
+* 위 명령으로 이미지가 Docker에 등록됩니다.
+2. Docker 컨테이너 생성 및 실행
 ```sh
-cd 2048.cpp
+docker run -it --rm final_2021040003:v1
 ```
+* -it : 터미널 상호작용 모드
+* --rm : 컨테이너 종료 시 자동 삭제
 
 ---
-
-For both CMake and Meson, the default C++ compiler on your system will be used.
-If you wish to manually select a C++ compiler, optionally add `CXX=clang++ cmake` or `CXX=clang++ meson` etc.
-
-#### Building with CMake
-
-3. Build the executable and run tests
-```sh
-ctest -S setup.cmake
-```
-4. Install the program (optional)
-```sh
-cmake --install build
-```
-
-5. Run the program and play the game! :tada:
-```sh
-2048    # run `build/2048` if game is not installed
-```
-
-<p align="center">
-    <b>OR</b>
-</p>
-
-#### Building with Meson
-
-3. Generate build configuration
-```sh
-meson build
-```
-4. Build the executable and run tests
-```sh
-meson test -C build
-```
-5. Install the program (optional)
-```sh
-meson configure build --prefix=$HOME/.local
-meson install -C build
-```
-
-6. Run the program and play the game! :tada:
-```sh
-2048    # run `build/2048` if game is not installed
-```
 
 ## Contributing
 
